@@ -1,0 +1,76 @@
+.play_cards {
+    min-height: 30vh;
+    width: 12vw;
+    position: relative;
+    /* border: 1px solid red; */
+    padding: 6px;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+
+}
+
+
+.play_cards:hover {
+    background: linear-gradient(180deg, var(--card_bg_color), var(--card_bg_color), rgba(77, 77, 77, 0.815));
+    /* background-color: aqua; */
+    cursor: pointer;
+
+}
+
+.play_cards img {
+    width: 100%;
+    border-radius: 5%;
+    object-fit: contain;
+}
+
+.play_cards h2 {
+    text-transform: capitalize;
+    overflow: hidden;
+    color: rgb(243, 243, 243);
+}
+
+.play_cards h2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.play_cards p {
+    text-transform: capitalize;
+    color: rgb(167, 163, 163);
+}
+
+.play_cards p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.card_img{
+    position: relative;
+}
+.play_cards .card_img> svg {
+    position: absolute;
+    /* z-index: -10; */
+    right: 3%;
+    bottom: -10%;
+    z-index: -10;
+    height: 35%;
+    width: 35%;
+    border: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.card_img> svg:hover {
+    cursor: pointer;
+    filter: brightness(160%);
+    transform: scale(105%);
+    transition: 0.1s;
+}
+
+.play_cards:hover .card_img>svg{
+    opacity: 1;
+    right: 3%;
+    bottom: 10%;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease-out;
+}

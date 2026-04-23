@@ -1,0 +1,221 @@
+@media (max-width: 450px) {
+
+    .left {
+        transform: translateX(-100%);
+        position: absolute;
+        width: 60vw;
+        transition: all 0.4s ease-in-out;
+        box-shadow: -7px 13px 0.7cm 2px gray;
+    }
+    body{
+        height: 95vh;
+    }
+    .leftham {
+        transform: translateX(0%) !important;
+        z-index: 10;
+    }
+    .library_heading h1 {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .right {
+        position: absolute;
+        width: 100vw;
+    }
+    .playbar{
+         min-height: 15vw;
+         bottom: 10%;
+         /* right: 1%; */
+    }
+    .songbutoons img {
+        width: 5vh;
+    }
+
+    .seekbar {
+        height: 7px;
+    }
+
+    .circle {
+        height: 14px;
+        width: 28px;
+    }
+.volume img{
+    width: 3vh;
+}
+    footer {
+        height: 10vh;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        margin-bottom: 0;
+
+    }
+
+    footer * {
+        /* align-self: flex-start; */
+        font-size: 20%;
+    }
+
+    .text_foot p {
+        font-size: 10px;
+    }
+
+    .text_foot h1 {
+        font-size: 10px;
+    }
+
+    .footer button {
+        font-size: 10px;
+        width: 100%;
+        align-self: center;
+    }
+
+    .play_cards {
+        min-height: 20vh;
+        width: 32vw;
+    }
+
+    .play_cards * {
+        font-size: 50%;
+    }
+
+    .right_sections_class {
+
+        min-width: 98vw;
+    }
+
+    .section_right_nav {
+        width: 90vw;
+        /* justify-items: flex-end; */
+        /* border: 1px solid red; */
+    }
+
+    .section_right_nav button {
+        margin-right: 10px;
+        font-size: 80%;
+        /* border: 1px solid red; */
+    }
+
+    .section_right_nav h1 {
+        font-size: 70%;
+
+    }
+    .right_footer_box ul li{
+        font-size: 50%;
+    }
+    .right_footer_box_social_media{
+        flex-direction: column;
+        padding-right: 10%;
+    }
+
+    header {
+        height: 9vh;
+    }
+
+    nav section:last-child {
+        display: none;
+    }
+
+    .logo img {
+        width: 25px;
+    }
+
+    .home {
+        padding: 7px;
+    }
+
+    .home img {
+        width: 15px;
+    }
+
+    .search_bar {
+        width: 60vw;
+    }
+
+    .search_bar img {
+        width: 20px;
+    }
+
+    .search_bar input {
+        padding: 6px;
+        font-size: 14px;
+        left: 15%;
+    }
+
+    .hamburger img {
+        display: block;
+    }
+
+    .library_heading {
+        width: 26vh;
+        padding: 3px 10px;
+    }
+
+    .library_heading h1 {
+        font-size: 15px;
+    }
+
+    .library_heading button {
+        padding: 2px 15px;
+    }
+
+    .library_heading button h1 {
+        font-size: 20px;
+    }
+
+    .playlist_section {
+        width: 26vh;
+    }
+
+    .playlist_section_cards {
+        width: 23vh;
+        min-height: 23vw;
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .playlist_section_cards h1 {
+        font-size: 60%;
+    }
+
+    .playlist_section_cards p {
+        font-size: 50%;
+    }
+
+    .playlist_section_cards button {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        font-size: 20%;
+    }
+
+    .cookies {
+        width: 26vh;
+        margin-top: 0px;
+        margin-bottom: 70px;
+    }
+    .cookies ul li{
+        font-size: 8px;
+    }
+    .cookies>button{
+            position: absolute;
+            right: 10%;
+            bottom: 10%;
+    }
+    .opened_playlist nav{
+        width: 20vh;
+    }
+    .opened_playlist nav h3{
+        font-size: 70%;
+    }
+    .opened_playlist ul li {
+        width: 21vh;
+        height: 12vw;
+    }
+    .opened_playlist ul li img:last-child{
+        right: 5%;
+        width: 2vh;
+    }
+}

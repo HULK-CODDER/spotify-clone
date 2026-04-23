@@ -1,0 +1,28 @@
+.seekbar{
+    width: 98%;
+    height: 5px;
+    background-color:black;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 10px;
+    z-index: 13;
+   
+}
+.seekbar:hover{
+    cursor: pointer;
+}
+.circle{
+    height: 10px;
+    width: 20px;
+    background-color: rgb(136, 132, 132);
+    border-radius: 5px;
+    position: absolute;
+    left: 0%;
+    top: -45%;
+    padding: 0;
+    margin: 0;
+     transition:left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle:hover{
+    cursor: pointer;
+}

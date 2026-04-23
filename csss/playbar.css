@@ -1,0 +1,70 @@
+.playbar{
+    position:fixed;
+    right: 0;
+    bottom: 11%;
+    min-height: 15vh;
+    width: inherit;
+    border-radius: 10px;
+    background-color:var(--green_color_contrast);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.songbutoons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songbutoons img{
+   
+    width: 3vw;
+}
+.songbutoons img:hover{
+filter: brightness(120%);
+transform: scale(105%);
+transition: 0.1s;
+cursor: pointer;
+ filter: invert(1);
+}
+.songbutoons img:active{
+    transform: scale(95%);
+    transition: 0.1s;
+}
+
+.name_duration{
+    margin-top: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    text-shadow: 1px 1px 0cm white;
+    text-transform: capitalize;     
+
+}
+.name_duration h4{
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.volume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.volume img{
+    width: 2vw;
+    cursor: pointer;
+}
+.volume img:active{
+    filter: invert(1);
+    transform: scale(95%);
+    transition: 0.1s;
+}
+.volume input{
+    cursor: pointer;
+}

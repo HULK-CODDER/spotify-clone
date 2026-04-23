@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" sizes="32x32" type="image/png" href="images/icons/favicon.png">
+    <link rel="stylesheet" href="csss/main.css">
+    <link rel="stylesheet" href="csss/nav.css">
+    <link rel="stylesheet" href="csss/left.css">
+    <link rel="stylesheet" href="csss/right.css">
+    <link rel="stylesheet" href="csss/utility.css">
+    <link rel="stylesheet" href="csss/playlist_section.css">
+    <link rel="stylesheet" href="csss/scrollbar.css">
+    <link rel="stylesheet" href="csss/play_cards.css">
+    <link rel="stylesheet" href="csss/playbar.css">
+    <link rel="stylesheet" href="csss/seekbar.css">
+    <link rel="stylesheet" href="csss/hero.css">
+    <link rel="stylesheet" href="csss/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section>
+                <div class="hamburger"><img src="images/icons/hamburger.svg" alt="hamburger"></div>
+                <div class="logo"><img title="Spotify" src="images/icons/spotify-round-black-icon.svg"
+                        alt="spotify_logo"></div>
+                <div class="home"><img title="Home" src="images/icons/noun-home-icon-681067.svg" alt="home"></div>
+                <div class="search_bar"><img title="Search" src="images/icons/noun-search-icon-8300588.svg"
+                        alt="search"><input class="border_none" type="text" placeholder="what you want to play?"><img
+                        class="left_border search_bar_second_img" title="Browser"
+                        src="images/icons/noun-browser-8174254.svg" alt="browser"></div>
+            </section>
+            <section>
+                <div class="support_buttons">
+                    <button>Premium</button><button>Support</button><button>Download</button>
+                </div>
+                <div class="install"><img src="images/icons/noun-download-8125551.svg" alt="download_logo">
+                    <p>install apps</p>
+                </div>
+                <div class="login_buttons">
+                    <button id="signup">signup</button>
+                    <button id="login">log in</button>
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main>
+        <section class="left">
+            <div class="library_heading">
+                <h1><img src="images/icons/libraray.svg" alt="library">your library</h1>
+                <button title="Create a new playlist,folder or jam">
+                    <h1>+</h1>create
+                </button>
+            </div>
+            <div class="playlist_section ">
+               
+                <div title="Your Playlist" id="yourplaylist_1" class="playlist_section_cards  ">
+                    <h1>your playlist</h1>
+                    <p>listent to your selected songs</p>
+                    <button>open playlist</button>
+                    <!-- <img src="images/icons/cross.svg" alt="close"> -->
+                </div>
+                <div class="create_playlist playlist_section_cards">
+                    <h1>create your first playlist</h1>
+                    <p>its easy and we will help you</p>
+                    <button>create playlist</button>
+                </div>
+                <div class="browse_podcast playlist_section_cards">
+                    <h1>let's find some podcast to follow</h1>
+                    <p>we'll keep you updated on new episodes</p>
+                    <button> browse podcasts</button>
+                </div>
+            </div>
+            <div>
+                <div class="cookies">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Safety & Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                    </ul>
+                    <ul>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
+                    <ul>
+                        <li>Cookies</li>
+                    </ul>
+                    <button><img src="images/icons/noun-global-7563647.svg" alt="browser">english</button>
+                </div>
+            </div>
+        </section>
+        <section class="right">
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="name_duration">
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+                <div class="songbutoons">
+                    <img src="images/icons/previous.svg" alt="Previous_Song">
+                    <img src="images/icons/play.svg" alt="Play_Song">
+                    <img src="images/icons/next.svg" alt="Next_Song">
+                </div>
+                <div class="volume">
+                    <img src="images/icons/volume.svg" alt="">
+                    <input type="range" name="volume" id="volume">
+                </div>
+
+            </div>
+            <div class="right_sections_class" id="trending_songs">
+                <div class="section_right_nav">
+                    <h1>trending songs</h1>
+                    <button>show all</button>
+                </div>
+                <div class="card_section_right ">
+                </div>
+            </div>
+            <div class="right_sections_class" id="popular_artists">
+                <div class="section_right_nav">
+                    <h1>popular artists</h1>
+                    <button>show all</button>
+                </div>
+                <div class="card_section_right"></div>
+            </div>
+            <div class="right_sections_class" id="popular_alnums_and_singles">
+                <div class="section_right_nav">
+                    <h1>popular albums and singles</h1>
+                    <button>show all</button>
+                </div>
+                <div class="card_section_right"></div>
+            </div>
+            <div class="right_sections_class" id="popular_radio">
+                <div class="section_right_nav">
+                    <h1>popular radio</h1>
+                    <button>show all</button>
+                </div>
+                <div class="card_section_right"></div>
+            </div>
+            <div class="right_sections_class" id="featured_charts">
+                <div class="section_right_nav">
+                    <h1>featured charts</h1>
+                    <button>show all</button>
+                </div>
+                <div class="card_section_right"></div>
+            </div>
+            <div class="right_sections_class" id="right_fotter_1">
+                <div class="right_footer_box">
+                    <ul>
+                        <li>company</li>
+                        <li>about</li>
+                        <li>jobs</li>
+                        <li>for the record</li>
+                    </ul>
+                </div>
+                <div class="right_footer_box">
+                    <ul>
+                        <li>communities</li>
+                        <li>for artists</li>
+                        <li>developers</li>
+                        <li>advertising</li>
+                        <li>investors</li>
+                        <li>vendors</li>
+                    </ul>
+                </div>
+                <div class="right_footer_box">
+                    <ul>
+                        <li>usefull links</li>
+                        <li>support</li>
+                        <li>free mobile app</li>
+                        <li>popular by country</li>
+                        <li>import your music</li>
+                    </ul>
+                </div>
+                <div class="right_footer_box">
+                    <ul>
+                        <li>spotify plans </li>
+                        <li>premium individual</li>
+                        <li>premium duo</li>
+                        <li>premium family</li>
+                        <li>premium student</li>
+                        <li>spotify free</li>
+                    </ul>
+                </div>
+                <div class="right_footer_box_social_media">
+                    <button>i</button><button>f</button><button>t</button>
+                </div>
+            </div>
+            <div class="right_sections_class" id="right_fotter_2">
+                &copy;2026 spotify AB
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="text_foot">
+
+                <p>Preview of Spotify</p>
+                <h1>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</h1>
+            </div>
+            <button>Sign up for free</button>
+        </div>
+    </footer>
+
+    <script src="script/hero.js"></script>
+    <script src="script/main.js"></script>
+    <!-- <script src="script/main2.js"></script> -->
+    <script src="script/responsive.js"></script>
+</body>
+
+</html>
